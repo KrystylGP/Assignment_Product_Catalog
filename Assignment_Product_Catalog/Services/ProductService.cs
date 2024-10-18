@@ -11,14 +11,14 @@ public class ProductService
     }
 
     //Metod för att lägga till en produkt.
-    internal void AddProduct(Product product)
+    public void AddProduct(Product product)
     {
         products.Add(product);
         Console.WriteLine($"Produkten '{product.Name}' har lagts till.");
     }
 
     //Metod för att visa alla produkter i katalogen.
-    internal void ViewProducts()
+    public void ViewProducts()
     {
         if (products.Count == 0) 
         {
@@ -44,7 +44,7 @@ public class ProductService
         }
         else
         {
-            Console.WriteLine($"Produkt {name} har tagits bort.");
+            Console.WriteLine($"Produkt '{name}' har tagits bort.");
         }
     }
 
